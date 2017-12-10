@@ -1,6 +1,6 @@
 //PROTOTYPE
 // Prototype allows to modify parent function, applying it to every object that inherit it
-// First looks is the object has a function or value, if doens't find it goes up to the parent (inherit delegation)
+// First looks if the object has a function or value, if it doens't find it goes up to the parent (inherit delegation)
 function first() { console.log(`ciao ${this.sound}`) }
 
 //This won't work because the new Arrow function has a different this;
@@ -51,4 +51,3 @@ newMau.call();
 //  CLASS: you can change only the method within the instance
 //
 //PROTOTYPE: Inherit delegation: First look in the object, if it doesn't find it goes up to the parent
-//  CLASS: Being an instance can't now have it's own function
